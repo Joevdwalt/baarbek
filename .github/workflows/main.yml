@@ -17,3 +17,6 @@ jobs:
         echo test, and deploy your project.
     - name: Build and deploy to GitHub Pages
       uses: EdricChan03/action-build-deploy-ghpages@v2.0.0
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        gh-pages-token: ${{ secrets.GH_PAGES_TOKEN }}
